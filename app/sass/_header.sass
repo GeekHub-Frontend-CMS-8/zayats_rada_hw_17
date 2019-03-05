@@ -9,7 +9,6 @@
   padding-top: 71px
   box-sizing: border-box
   position: relative
-  display: flex
   flex-direction: column
   &__inner
     position: absolute
@@ -28,7 +27,7 @@
     max-width: 1200px
     width: 100%
     height: 30px
-    h1
+    .logo
       color: $red-color
       font-size: $logo-font-size
       font-weight: $bold-weight
@@ -102,6 +101,25 @@
           color: #ffffff
           font-size: 20px
 
+
+
+@media screen and (max-width: 900px)
+  .top-menu
+    .logo
+      margin-left: 20px
+
+  .top-menu-content
+    margin: 0 auto
+
+@media screen and (max-width: 650px)
+  .top-menu-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    h2
+      text-align: center
+    p
+      text-align: center
 
 
 
